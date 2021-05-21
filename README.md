@@ -67,8 +67,8 @@ Finally, I added a few camera control options, including WSAD keys and left clic
 
 
 ## Results:
-The program builds and runs without errors, however desired result is not reached.<br/>
-There are sparks that flash in the resulting screen that can be seen, but very few and random. (Screen recording will be updated asap, I have not found a way to record my laptop.) It seems there exists a placement error of the camera and the image, or something is wrong with the algorithm that I have yet to find out. <br/>
+The program builds and runs without errors, however desired result is not reached. It was showing a better image yesterday morning, but I edited the file without commits and accidentally introduced unknown bugs <br/>
+Currently, there are sparks that flash in the resulting screen that can be seen, but very few and random. (Screen recording will be updated asap, I have not found a way to record my laptop.) It seems there exists a placement error of the camera and the image, or something is wrong with the algorithm that I have yet to find out. <br/>
 Although the goal of creating a bonfire with particle system is not yet reached, I tried to incorporate as many things I could absorb as possible that I came across during my research dig for the project to make the image look more realistic, so I’m already satisfied that it ran without errors. 
 
 
