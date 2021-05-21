@@ -15,13 +15,10 @@ I'm thinking of applying all techniques above on a human model (transparent wate
 
 Since I had problems generating the reflection shaders for assignment 4 as there were many technical file linking issues, on May 17th, I decided to switch to extending assignment 5 instead. <br/>
 <br/>
-TODO: simulate a sparking bonfire as the unique demo, with expanded camera controls options.
+TODO: simulate a sparking bonfire as the unique demo, with expanded camera controls options, made more realistic such that it grows brighter and then go out through time. 
 <br/>
 (*Referenced*: 洋葱’s paper on OpenGL Transform Feedback, Learn OpenGL website tutorials, YouTube particle system tutorials) <br/>
-<br/>
-Goal image (for display only): a similar version of the image below, made more realistic such that it grows brighter and then go out through time. <br/>
 
-<img src="https://user-images.githubusercontent.com/75322388/119155442-3329da00-ba21-11eb-98ea-846c2ee720e4.png" width="300" height="300">
 
 ## Run: 
 Open gitbash containing the directory.
