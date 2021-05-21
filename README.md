@@ -68,8 +68,8 @@ Second, the speed of the particles needs to be random, but at the same time rema
 InitVelocity = (MaxVelocity − MinVelocity) ∗ rand + MinVelocity <br/>
 ```
 Above, InitVelocity is the initial speed, MaxVelocity and MinVelocity are the fastest and slowest speeds at which a particle moves, rand is random in the range 0 to 1 inclusive. <br/><br/>
-Third, when the flame receives a positive force on the y axis, we set the acceleration vector to (0,1,0) to simulate something similar to wind effect. <br/>
-I also added code snippets to simulate the lifetime of the bonfire, modifying the transparency and size of each particle to go brighter and then gradually fade out through time. This could not be checked effective or not as result was not delivered fully. Texture samples were downloaded from online tutorials to create a flare and spark visual effect as the particles move up, implemented to simulate prettier bonfire,spark particles could be seen in the result. <br/><br/>
+Third, when the flame receives a positive force on the y axis, we set the acceleration vector to (0,1,0) to simulate something similar to wind effect. <br/><br/>
+I also added code snippets via online tutorials of particle lifetime to simulate the lifetime of the bonfire, modifying the transparency and size of each particle to go brighter and then gradually fade out through time. This could not be checked effective or not as result was not delivered fully. Texture samples were downloaded from online tutorials to create a flare and spark visual effect as the particles move up, implemented to simulate prettier bonfire,spark particles could be seen in the result. <br/><br/>
 Finally, I added a few camera control options, including WSAD keys and left click with mouse pointer, following guidance on Learn OpenGL website tutorials.<br/>
 
 
