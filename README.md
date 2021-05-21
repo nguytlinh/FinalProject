@@ -51,21 +51,21 @@ particles/build $ ../bin/Debug/demo
 Assume that the particles all have y value = 0, meaning they are produced at random positions on the OXZ plane and transition in up direction to resemble the flame. First, to create the difference in density of particles: the middle being brighter with more concentrated particles and fewer as we move out. I found an equation to assign the initial position of the particles: 
 
 ```
-Pos(x)=1/ sqrt(2∗PI∗r) ∗ exp (−(Xi−X0)^2 / (2∗r^2) <br/>
-Pos(y)=0 <br/>
-Pos(z)=1/ sqrt(2∗PI∗r) ∗ exp(−(Zi−Z0)^2 / 2∗r^2) <br/>
+Pos(x)=1/ sqrt(2∗PI∗r) ∗ exp (−(Xi−X0)^2 / (2∗r^2) 
+Pos(y)=0 
+Pos(z)=1/ sqrt(2∗PI∗r) ∗ exp(−(Zi−Z0)^2 / 2∗r^2) 
 ```
 Above, (X0, Y0, Z0)  is the center of the burning flame, r is radius of the burning zone, and (Pos(x), Pos(y), Pos(z)) is the start position of the flame particles. To simplify this, however, we can associate the size of the flame to value n, and position range of the new particles to n (=10) and Adj_value: 
 
 ```
-Pos(x)= (∑i=0 -> n) Rand1() ∗ Adj_value <br/>
-Pos(y)=0 <br/>
-Pos(x)= (∑i=0 -> n) Rand2() ∗ Adj_value <br/>
+Pos(x)= (∑i=0 -> n) Rand1() ∗ Adj_value 
+Pos(y)=0 
+Pos(x)= (∑i=0 -> n) Rand2() ∗ Adj_value 
 ```
 Above, Rand1() and Rand2() give different random numbers in the range -1 to 1 inclusive. Adj_value is set manually to adjust the effect. (this could be quite similar to Gaussian normal distribution) <br/><br/>
 Second, the speed of the particles needs to be random, but at the same time remains fitted in the shape of the bonfire (using the average method): 
 ```
-InitVelocity = (MaxVelocity − MinVelocity) ∗ rand + MinVelocity <br/>
+InitVelocity = (MaxVelocity − MinVelocity) ∗ rand + MinVelocity 
 ```
 Above, InitVelocity is the initial speed, MaxVelocity and MinVelocity are the fastest and slowest speeds at which a particle moves, rand is random in the range 0 to 1 inclusive. <br/><br/>
 Third, when the flame receives a positive force on the y axis, we set the acceleration vector to (0,1,0) to simulate something similar to wind effect. <br/><br/>
